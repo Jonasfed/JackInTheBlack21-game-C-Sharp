@@ -1,0 +1,14 @@
+C:\Users\Jo06qt3\Desktop\itng\bin\Debug\net9.0\itng.exe
+C:\Users\Jo06qt3\Desktop\itng\bin\Debug\net9.0\itng.deps.json
+C:\Users\Jo06qt3\Desktop\itng\bin\Debug\net9.0\itng.runtimeconfig.json
+C:\Users\Jo06qt3\Desktop\itng\bin\Debug\net9.0\itng.dll
+C:\Users\Jo06qt3\Desktop\itng\bin\Debug\net9.0\itng.pdb
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.AssemblyInfoInputs.cache
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.AssemblyInfo.cs
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.csproj.CoreCompileInputs.cache
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.dll
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\refint\itng.dll
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.pdb
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.genruntimeconfig.cache
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\ref\itng.dll
