@@ -12,3 +12,4 @@ C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\refint\itng.dll
 C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.pdb
 C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.genruntimeconfig.cache
 C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\ref\itng.dll
+C:\Users\Jo06qt3\Desktop\itng\obj\Debug\net9.0\itng.sourcelink.json
