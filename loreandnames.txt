@@ -1,0 +1,39 @@
+Holding an Ace (Blackjack Terms)In blackjack, an Ace is unique because it can be worth 1 or 11 points.Soft Hand / Soft Total: Any hand that contains an Ace where it is currently counted as 11 without the total exceeding 21.Natural / Snapper: A "natural" blackjack is an Ace and a 10-value card (10, J, Q, K) dealt as the first two cards.Soft 17: A specific hand (Ace-6) that is famous because many casino rules require the dealer to either hit or stand on it.Ace-Rich / Ace-Poor: Terms used by card counters to describe whether the remaining deck has a high or low density of Aces.Poker-Style Nicknames (Applied to Aces)If you are looking for creative nicknames similar to "pocket rockets," these are common for any Ace-based starting hand:Bullets: Refers to the "A" looking like a bullet tip.American Airlines: Based on the "AA" initials.Rocket Queen: Specifically for an Ace and a Queen (A-Q).Snake Eyes: Borrowed from craps, often used when someone is dealt two Aces (which you would usually split in blackjack).Batteries: Because "AA" batteries "charge up" the hand.Teepees / Needles: Visual nicknames for the sharp points of the letter "A".Hand-Specific NicknamesBlackjack / 21: The ultimate two-card hand.Apple Jacks / Ajax: Nicknames for an Ace-Jack (A-J) hand.Little Slick: A nickname for Ace-Queen (A-Q), a step down from "Big Slick" (A-K).Five-Card Charlie: A hand where you draw five cards without busting, which sometimes wins automatically depending on house rules.
+
+The full loop as it stands
+
+Round starts, chip target shown
+Player builds hand, scores chips × mult
+Hit target = survive, miss = run over
+Beat dealer = bonus blind effect triggers (good or bad depending on outcome)
+Chip target scales exponentially each round
+Jesters modify scoring throughout
+Special events like Dealer's Rage shake up the run
+
+Jack has Split personality disorder = these are the jokers of this game they are called jesters.
+Im thinking that 21 is arbitrary, you get chips and the value that you get is the chips and the mult is based on the blacks IE pocket ACE or Black jacks (double jack thats a dark suit like spade or club)
+if you get a Blackjack (two jacks) you automatically get chips X ((11x2) + base mult of jacks wich is 11) a Black is kind of a synergy. you do not get this if you use a spade and a heart jack you only get 11 mult
+pocket ace has a base mult of 21 while adding the ace value on top of it: 21 + (15 x 2). ace has 2 values, 1 chosen before each run. 
+sepcial events are hardcoded into the dealer, depending on the personality of the dealer and the "ante"
+Round starts, chip target shown
+Player builds hand, scores chips × mult
+Hit target = survive, miss = run over
+Beat dealer = bonus blind effect triggers (good or bad depending on outcome)
+Chip target scales exponentially each round
+Jesters modify scoring throughout
+Special events like Dealer's Rage shake up the run
+
+round 1 feeling like familiar blackjack is actually great onboarding too. Players who've never touched your game instantly understand the goal, then round 2 hits and they realize they need to start building.
+It also makes Jesters feel like a discovery rather than a requirement from the start. By the time the numbers get scary, players are already invested in their build.
+So the scaling locked in:
+
+x starts at 0
+Formula: y = 21 × π^x (x= round)
+Round 1: 21 — learn the game
+Round 2: 65 — okay I need some help
+Round 3: 207 — jesters are now essential
+Round 4+: pure chaos, good luck
+
+This also implies something about Jester design
+Since players have roughly 2 rounds of breathing room, Jesters need to be obtainable by round 2 at the latest. So whenever you design the shop/acquisition system, keep that in mind — the player needs a realistic path to at least one Jester before round 3.
+That's a design constraint worth writing down in your notes alongside the formula.
