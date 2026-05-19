@@ -47,9 +47,17 @@ namespace Jackblack {
             TypewritingEffect(tutorial, 50);
         } 
     }
-    class Card {
-        public string Suit {get; set;}
-        public string Rank {get; set;}
+
+    enum Suit {Spade, Club, Heart, Diamond}
+    enum Rank {Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace}
+    class Card 
+    {
+        public Suit Suit{get; set;}
+        public Rank Rank{get; set;}
         public int Value {get; set;}
+    }
+    class Deck
+    {
+        
     }
 }
