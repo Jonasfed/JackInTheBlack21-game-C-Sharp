@@ -47,9 +47,10 @@ namespace Jackblack {
                     };
                 int randomIndex = rand.Next(byetext.Length);
                 string randomWord = byetext[randomIndex];
+                string exitkey = "Press any key to exit";
 
-                Console.WriteLine(randomWord);
-                Console.WriteLine("Press any key to exit");
+                TypewritingEffect(randomWord, 15);
+                TypewritingEffect(exitkey, 15);
                 Console.ReadKey(true);
                 Environment.Exit(0);
             }
