@@ -49,6 +49,8 @@ namespace Jackblack {
                 string randomWord = byetext[randomIndex];
                 string exitkey = "Press any key to exit";
 
+                //this randomizes the goodbye message - reminds me of skeletor from He-Man
+
                 TypewritingEffect(randomWord, 15);
                 TypewritingEffect(exitkey, 15);
                 Console.ReadKey(true);
