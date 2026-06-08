@@ -64,14 +64,37 @@ namespace Jackblack {
             string pps = "Press H to hit and S to stay";
             TypewritingEffect(pps, 50);
 
+            int aceValue = 0;
+            bool isValidInput = false;
+
+            while (!isValidInput)
+            {
+                string askforACE = "For this run, is Ace 1 or 11?";
+                TypewritingEffect(askforACE, 50);
+                string aceinput = Console.ReadLine();
+                if (aceinput == "1")
+                {
+                    string aceinputtext = "Ace = 1";
+                    TypewritingEffect(aceinputtext, 15);
+                    aceValue = 1;
+                    isValidInput = true;
+                }
+                else if (aceinput == "11")
+                {
+                    string aceinputtext2 = "Ace = 11";
+                    TypewritingEffect(aceinputtext2, 15);
+                    aceValue = 11;
+                    isValidInput = true;
+                }
+                else
+                {
+                    string notaccepted = "The thing you entered is not allowed";
+                    TypewritingEffect(notaccepted, 15);
+                    isValidInput = false;
+                }
+            }
 
         } 
-        static void gameLogic()
-        {
-            // 21 x 3.14^x chip sum
-            //round = x
-        }
-    }
 
     public enum Suit {Spade, Club, Heart, Diamond}
     public enum Rank {Two=2, Three=3, Four=4, Five=5, Six=6, Seven=7, Eight=8, Nine=9, Ten=10, Jack, Queen, King, Ace}
@@ -89,14 +112,19 @@ namespace Jackblack {
             {
                 foreach (Rank rank in Enum.GetValues<Rank>())
                 {
-                    cards.Add(new Card
-                    {
+                    cards.Add(new Card{
                         Suit = suit,
                         Rank = rank,
-                        Value = (int)rank
+                        value = (int)rank 
                     });
                 }
             }
         }
+        public static int GetValue(Rank rank, int aceValue);
+        if (rank == Rank.Ace) return aceValue; 
+        if (rank >= Rank.Jack) return 10;
+        if (rank >= Rank.Queen) return 10;
+        if (rank >= Rank.King) return 10;
+        return (int)rank;
     }
 }
