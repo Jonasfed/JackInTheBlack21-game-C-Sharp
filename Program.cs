@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Jackblack {
@@ -18,8 +19,7 @@ namespace Jackblack {
             Console.Title = "Jackintheblack 21";
             Console.Clear();
 
-            String title = File.ReadAllText("asciiartJITB.txt");
-            Console.ForegroundColor = ConsoleColor.Blue;
+            string title = File.ReadAllText("asciiartJITB.txt");
             TypewritingEffect(title, 15);
             Console.WriteLine("\nPress Y to start or N to close.");
             ConsoleKeyInfo input = Console.ReadKey(true);
@@ -49,7 +49,7 @@ namespace Jackblack {
                 string randomWord = byetext[randomIndex];
                 string exitkey = "Press any key to exit";
 
-                //this randomizes the goodbye message - reminds me of skeletor from He-Man
+                //this randomizes the goodbye message - reminds me of skeletor
 
                 TypewritingEffect(randomWord, 15);
                 TypewritingEffect(exitkey, 15);
@@ -61,8 +61,18 @@ namespace Jackblack {
         {
             string tutorial = "\nGoal of the game is to get to or as close to 21 total value, to beat the Jack (dealer), just as in blackjack. \nHowever in this game, there are special rules known as Blacks (how original). \nYou will learn the game as it goes on. best of luck.";
             TypewritingEffect(tutorial, 50);
-            
+            string pps = "Press H to hit and S to stay";
+            TypewritingEffect(pps, 50);
+
+
         } 
+        static void gameLogic()
+        {
+            // 21 x 3.14^x chip sum
+            //round = x
+            nint y = 1;
+            string currentRound = y;
+        }
     }
 
     enum Suit {Spade, Club, Heart, Diamond}
