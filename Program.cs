@@ -70,21 +70,33 @@ namespace Jackblack {
         {
             // 21 x 3.14^x chip sum
             //round = x
-            nint y = 1;
-            string currentRound = y;
         }
     }
 
-    enum Suit {Spade, Club, Heart, Diamond}
-    enum Rank {Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace}
-    class Card 
+    public enum Suit {Spade, Club, Heart, Diamond}
+    public enum Rank {Two=2, Three=3, Four=4, Five=5, Six=6, Seven=7, Eight=8, Nine=9, Ten=10, Jack, Queen, King, Ace}
+    public class Card 
     {
         public Suit Suit{get; set;}
         public Rank Rank{get; set;}
-        public int Value {get; set;}
     }
     class Deck
     {
-        
+        private List<Card> cards = new List<Card>();
+        public Deck()
+        {
+            foreach (Suit suit in Enum.GetValues<Suit>())
+            {
+                foreach (Rank rank in Enum.GetValues<Rank>())
+                {
+                    cards.Add(new Card
+                    {
+                        Suit = suit,
+                        Rank = rank,
+                        Value = (int)rank
+                    });
+                }
+            }
+        }
     }
 }
