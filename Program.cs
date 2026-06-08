@@ -115,16 +115,18 @@ namespace Jackblack {
                     cards.Add(new Card{
                         Suit = suit,
                         Rank = rank,
-                        value = (int)rank 
                     });
                 }
             }
         }
-        public static int GetValue(Rank rank, int aceValue);
-        if (rank == Rank.Ace) return aceValue; 
-        if (rank >= Rank.Jack) return 10;
-        if (rank >= Rank.Queen) return 10;
-        if (rank >= Rank.King) return 10;
-        return (int)rank;
+
+        public static int GetValue(Rank rank, int aceValue)
+{
+    if (rank == Rank.Ace) return aceValue;
+    if (rank >= Rank.Jack) return 10;
+    return (int)rank;
+}
+    }
+        
     }
 }
