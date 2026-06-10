@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
+
 
 namespace Jackblack {
     class Program {
@@ -121,11 +120,11 @@ namespace Jackblack {
         }
 
         public static int GetValue(Rank rank, int aceValue)
-{
-    if (rank == Rank.Ace) return aceValue;
-    if (rank >= Rank.Jack) return 10;
-    return (int)rank;
-}
+        {
+            if (rank == Rank.Ace) return aceValue;
+            if (rank >= Rank.Jack) return 10;
+            return (int)rank;
+        }
     }
         
     }
