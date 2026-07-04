@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net9.0": {}
   },
@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jo06qt3\\.nuget\\packages\\": {}
+    "C:\\Users\\feder\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jo06qt3\\Desktop\\itng\\itng.csproj",
+      "projectUniqueName": "C:\\Users\\feder\\OneDrive\\Dokumenter\\itng\\itng.csproj",
       "projectName": "itng",
-      "projectPath": "C:\\Users\\Jo06qt3\\Desktop\\itng\\itng.csproj",
-      "packagesPath": "C:\\Users\\Jo06qt3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jo06qt3\\Desktop\\itng\\obj\\",
+      "projectPath": "C:\\Users\\feder\\OneDrive\\Dokumenter\\itng\\itng.csproj",
+      "packagesPath": "C:\\Users\\feder\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\feder\\OneDrive\\Dokumenter\\itng\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jo06qt3\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\feder\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -30,6 +30,7 @@
       },
       "frameworks": {
         "net9.0": {
+          "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {}
         }
@@ -44,10 +45,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net9.0": {
+        "framework": "net9.0",
         "targetAlias": "net9.0",
         "imports": [
           "net461",
@@ -65,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
