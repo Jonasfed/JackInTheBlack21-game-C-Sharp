@@ -91,6 +91,8 @@ namespace Jackblack {
                     TypewritingEffect(notaccepted, 15);
                     isValidInput = false;
                 }
+
+
             }
 
         } 
@@ -102,6 +104,7 @@ namespace Jackblack {
         public Suit Suit{get; set;}
         public Rank Rank{get; set;}
     }
+
     class Deck
     {
         private List<Card> cards = new List<Card>();
@@ -111,7 +114,8 @@ namespace Jackblack {
             {
                 foreach (Rank rank in Enum.GetValues<Rank>())
                 {
-                    cards.Add(new Card{
+                    cards.Add(new Card
+                    {
                         Suit = suit,
                         Rank = rank,
                     });
@@ -125,6 +129,12 @@ namespace Jackblack {
             if (rank >= Rank.Jack) return 10;
             return (int)rank;
         }
+
+        public void Shuffle()
+        {
+                
+        }
+
     }
         
     }
