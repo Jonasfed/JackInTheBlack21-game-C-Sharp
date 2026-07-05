@@ -37,3 +37,5 @@ Round 4+: pure chaos, good luck
 This also implies something about Jester design
 Since players have roughly 2 rounds of breathing room, Jesters need to be obtainable by round 2 at the latest. So whenever you design the shop/acquisition system, keep that in mind — the player needs a realistic path to at least one Jester before round 3.
 That's a design constraint worth writing down in your notes alongside the formula.
+
+go over to duality og possibly stride engine, however if i want to make the transition easy integrate monogame instead of duality or stride.
