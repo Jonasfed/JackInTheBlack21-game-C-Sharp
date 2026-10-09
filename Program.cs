@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
-
+//Don't know why it imports system IO and sometimes system[numbers]
+//but i think it has to do with the game being in the terminal.
+//gonna try to remake it with python later.
 
 namespace Jackblack {
     class Program {
@@ -13,6 +15,8 @@ namespace Jackblack {
             }
             Console.WriteLine();
         } 
+        //this main void is what the users see, it calls on the game for the gamelogic so that the user can play it, 
+        //plan is to only make this a blackjack game
         static void Main(String[]args)
         {
             Console.Title = "Jackintheblack 21";
@@ -56,6 +60,7 @@ namespace Jackblack {
                 Environment.Exit(0);
             }
         }
+        //This is the start of the game void, this is all of the logic that the game uses
         static void Game()
         {
             string tutorial = "\nGoal of the game is to get to or as close to 21 total value, to beat the Jack (dealer), just as in blackjack. \nHowever in this game, there are special rules known as Blacks (how original). \nYou will learn the game as it goes on. best of luck.";
@@ -63,6 +68,7 @@ namespace Jackblack {
             string pps = "Press H to hit and S to stay";
             TypewritingEffect(pps, 50);
 
+            //This isnt a uneeded defining of value, the While will break as far as i know.
             int aceValue = 0;
             bool isValidInput = false;
 
@@ -97,6 +103,7 @@ namespace Jackblack {
 
         } 
 
+    //these define the cardtypes, ace is ambigous, jack queen and king are all ten
     public enum Suit {Spade, Club, Heart, Diamond}
     public enum Rank {Two=2, Three=3, Four=4, Five=5, Six=6, Seven=7, Eight=8, Nine=9, Ten=10, Jack, Queen, King, Ace}
     public class Card 
@@ -104,7 +111,8 @@ namespace Jackblack {
         public Suit Suit{get; set;}
         public Rank Rank{get; set;}
     }
-
+    //this defines the deck, wiht the deck, defining the ace as when the ace is chosen in game logic
+    //and deck shuffling
     class Deck
     {
         private List<Card> cards = new List<Card>();
