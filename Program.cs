@@ -22,7 +22,7 @@ namespace Jackblack {
             Console.Title = "Jackintheblack 21";
             Console.Clear();
 
-            string title = File.ReadAllText("asciiartJITB.txt");
+            string title = File.ReadAllText("asciiarttitle.txt");
             TypewritingEffect(title, 15);
             Console.WriteLine("\nPress Y to start or N to close.");
             ConsoleKeyInfo input = Console.ReadKey(true);
