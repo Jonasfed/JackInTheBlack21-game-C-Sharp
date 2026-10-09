@@ -4,3 +4,6 @@ been working on it on and off for about 5 months now, however i cant be bothered
 
 wish i could just finish it but i wanna move to python or Lua for the second version of this project so that i can utilize the LOVE engine. 
 and actually style the game how i want.
+
+
+I used .net 10 but think .net 9 and up should work
