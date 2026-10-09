@@ -1,0 +1,6 @@
+This is a blackjack game, called it jack in the black... 
+the lore txt has alot of text you can read... 
+been working on it on and off for about 5 months now, however i cant be bothered making this into something real anymore.
+
+wish i could just finish it but i wanna move to python or Lua for the second version of this project so that i can utilize the LOVE engine. 
+and actually style the game how i want.
